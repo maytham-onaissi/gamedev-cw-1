@@ -20,12 +20,13 @@ namespace ConsoleApp1
                 int ageDifference = Math.Abs(age - heroAge);
                 Console.WriteLine(ageDifference);
                 Console.WriteLine(heroSuperPower1 == superPower1 || heroSuperPower1 == superPower2);
+                setSpeed(2.5);
                 Console.WriteLine("The current player speed is" + getSpeed());
                 
         }
-         static void setSpeed()
+         static void setSpeed(double speed)
         {
-             playerSpeed = 2.5;
+             playerSpeed = speed;
         }
          static double getSpeed()
         {
