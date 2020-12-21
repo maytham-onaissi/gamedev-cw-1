@@ -4,6 +4,7 @@ namespace ConsoleApp1
 {
     class Program
     {
+        double playerSpeed = 0; 
         static void Main(string[] args)
         {
              string characterName = "Ahmed";
@@ -19,6 +20,16 @@ namespace ConsoleApp1
                 int ageDifference = Math.Abs(age - heroAge);
                 Console.WriteLine(ageDifference);
                 Console.WriteLine(heroSuperPower1 == superPower1 || heroSuperPower1 == superPower2);
+                Console.WriteLine(getSpeed());
+                
+        }
+         static void setSpeed()
+        {
+             playerSpeed = 2.5;
+        }
+         static double getSpeed()
+        {
+            return playerSpeed
         }
     }
 }
