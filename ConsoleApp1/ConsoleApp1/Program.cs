@@ -12,6 +12,13 @@ namespace ConsoleApp1
                 int age = 15;
                 float speed = 1.65F;
                 System.Console.WriteLine("My name is {0} and my super powers are {1} and {2}. My age is {3} and my speed is {4}", characterName, superPower1, superPower2, age, speed);
+                String heroName = "Sora";
+                int heroHeight = 170;
+                int heroAge = 18;
+                String heroSuperPower1 = "Night vision";
+                int ageDifference = Math.Abs(age - heroAge);
+                Console.WriteLine(ageDifference);
+                Console.WriteLine(heroSuperPower1 == superPower1 || heroSuperPower1 == superPower2);
         }
     }
 }
